@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Filament Chrome Extension Privacy Notice | Filament ATS</title>
+<meta name="description" content="What the Filament Chrome extension reads, what it sends to your Filament account, and what it does not do.">
+<link rel="canonical" href="https://filamentats.com/extension-privacy">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;600;700&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0F1A1C; --graphite:#1B1F24; --bone:#F4F5F6;
+    --blue:#1F5EFF; --blue-light:#5C8CFF;
+    --text:rgba(244,245,246,.92); --muted:rgba(244,245,246,.72); --dim:rgba(244,245,246,.42);
+    --line:rgba(244,245,246,.10);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{
+    background:var(--ink); color:var(--text);
+    font-family:'Jost',sans-serif; font-weight:400;
+    display:flex; flex-direction:column; min-height:100vh;
+    -webkit-font-smoothing:antialiased;
+  }
+  main{flex:1; padding:56px 24px 64px}
+  .wrap{max-width:720px; width:100%; margin:0 auto}
+  .lockup{display:block; height:40px; width:auto; margin-bottom:48px}
+  .eyebrow{
+    font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:12px;
+    letter-spacing:.14em; text-transform:uppercase; color:var(--blue-light);
+    margin-bottom:14px;
+  }
+  h1{font-weight:700; font-size:clamp(30px,5vw,42px); line-height:1.1; letter-spacing:-.02em; color:var(--bone); margin-bottom:10px}
+  .updated{font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--dim); margin-bottom:36px}
+  h2{font-weight:600; font-size:19px; color:var(--bone); margin:34px 0 10px}
+  p, li{font-weight:300; font-size:17px; line-height:1.6; color:var(--muted)}
+  p{margin-bottom:12px}
+  ul{margin:0 0 12px 22px}
+  li{margin-bottom:6px}
+  strong{font-weight:600; color:var(--text)}
+  a{color:var(--blue-light); text-decoration:none}
+  a:hover{color:var(--bone)}
+  footer{
+    padding:22px 24px; display:flex; flex-wrap:wrap; gap:12px; justify-content:space-between;
+    font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--dim);
+    border-top:1px solid var(--line);
+  }
+  footer a{color:var(--dim)}
+  footer a:hover{color:var(--bone)}
+</style>
+</head>
+<body>
+<main>
+  <div class="wrap">
+    <a href="/"><img class="lockup" src="images/filament-ats-lockup-reversed.png" alt="Filament ATS"></a>
+    <div class="eyebrow">Chrome Extension</div>
+    <h1>Privacy Notice</h1>
+    <div class="updated">Last updated: October 1, 2026</div>
+
+    <p>This notice covers the Filament Chrome extension ("Filament - Save to ATS"). The extension and Filament are built and operated by VoltForce LLC, a New Jersey limited liability company ("we," "us"). It adds to the <a href="https://volt-force.com/privacy-policy">VoltForce Privacy Policy</a>, which continues to apply to information once it is in Filament.</p>
+
+    <h2>1. What the extension does</h2>
+    <p>The extension has one purpose: it lets a signed-in Filament user save the LinkedIn profile they are looking at into their Filament account.</p>
+
+    <h2>2. What it reads, and when</h2>
+    <p>The extension reads a page only when you click the Filament icon, and only the tab you clicked it on. On a LinkedIn profile it reads what that page shows about the person:</p>
+    <ul>
+      <li>name</li>
+      <li>current job title and company</li>
+      <li>city and state or region</li>
+      <li>the web address of the profile</li>
+    </ul>
+    <p>It does not run in the background. It does not read your browsing history, your messages, your connections, or any page you have not opened and clicked the icon on.</p>
+
+    <h2>3. What it sends, and where</h2>
+    <p>The extension talks to one place: the Filament service at app.filamentats.com, over an encrypted connection.</p>
+    <ul>
+      <li><strong>When you sign in,</strong> your Filament email and password are sent to Filament to sign you in. The extension does not keep your password.</li>
+      <li><strong>When you open it on a profile,</strong> the profile's web address, and for some accounts the name and company shown, are sent to Filament to check whether that person is already in your account.</li>
+      <li><strong>When you click Save,</strong> the details shown in the form, which you can edit first, are sent to Filament and stored in your organization's account.</li>
+    </ul>
+
+    <h2>4. What stays on your computer</h2>
+    <p>The extension keeps your Filament email address, your account type and a sign-in token in Chrome's extension storage on your computer, so you do not have to sign in every time. Signing out removes the token. Removing the extension removes all of it.</p>
+
+    <h2>5. What it does not do</h2>
+    <ul>
+      <li>We do not sell information handled by the extension, and we do not use it for advertising.</li>
+      <li>The extension contains no analytics, no advertising code and no tracking code, and it does not load code from other sites.</li>
+      <li>We do not use or transfer the information for any purpose other than the one described above.</li>
+    </ul>
+    <p>The use of information received through the extension follows the Chrome Web Store User Data Policy, including its Limited Use requirements.</p>
+
+    <h2>6. Once a profile is saved</h2>
+    <p>A saved record belongs to the Filament account it was saved into. If your employer or team uses Filament ATS, your organization decides how the records its team saves are used. Records saved by VoltForce's own recruiters are handled as described in the <a href="https://volt-force.com/privacy-policy">VoltForce Privacy Policy</a>, including how long they are kept and how they may be shared with prospective employers.</p>
+
+    <h2>7. If your profile was saved</h2>
+    <p>If you believe a Filament user has saved information about you and you would like to know what is held, have it corrected, or have it removed, email <a href="mailto:hello@volt-force.com">hello@volt-force.com</a>. We honor verified requests, and may first confirm your identity so that no one else can access or delete your information. Where the record belongs to another organization's Filament account, we will pass your request to that organization.</p>
+
+    <h2>8. Security</h2>
+    <p>We use reasonable safeguards designed to protect information handled by the extension. No method of transmission or storage is completely secure, and we cannot guarantee absolute security. Keep your Filament password confidential.</p>
+
+    <h2>9. Changes to this notice</h2>
+    <p>We may update this notice from time to time. When we do, we will revise the "last updated" date above.</p>
+
+    <h2>10. Contact</h2>
+    <p>VoltForce LLC<br>96 Smull Ave, West Caldwell, NJ 07006<br><a href="mailto:hello@volt-force.com">hello@volt-force.com</a></p>
+  </div>
+</main>
+<footer>
+  <span>Filament ATS &middot; Built by <a href="https://volt-force.com">VoltForce</a></span>
+  <span><a href="https://volt-force.com/privacy-policy">Privacy</a> &nbsp;&middot;&nbsp; <a href="https://volt-force.com/terms-of-use">Terms</a></span>
+</footer>
+</body>
+</html>
