@@ -19,13 +19,14 @@
   :root{
     --ink:#0F1A1C; --graphite:#1B1F24; --bone:#F4F5F6;
     --blue:#1F5EFF; --blue-light:#5C8CFF;
-    --text:rgba(244,245,246,.92); --muted:rgba(244,245,246,.64); --dim:rgba(244,245,246,.42);
-    --line:rgba(244,245,246,.10);
+    /* LIGHT theme (2026-10-06), matching brochure v4 light + volt-force.com/filament */
+    --text:#1B1F24; --muted:#48515A; --dim:#8A939E;
+    --line:#DCE1E6;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
   body{
-    background:var(--ink); color:var(--text);
+    background:var(--bone); color:var(--text);
     font-family:'Jost',sans-serif; font-weight:400;
     display:flex; flex-direction:column; min-height:100vh;
     -webkit-font-smoothing:antialiased;
@@ -35,20 +36,20 @@
   .lockup{display:block; height:56px; width:auto; margin:0 auto 44px}
   .eyebrow{
     font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:12px;
-    letter-spacing:.14em; text-transform:uppercase; color:var(--blue-light);
+    letter-spacing:.14em; text-transform:uppercase; color:var(--blue);
     margin-bottom:22px;
   }
   h1{
     font-weight:700; font-size:clamp(40px,7vw,68px); line-height:1.04; letter-spacing:-.02em;
-    color:var(--bone); margin-bottom:26px;
+    color:var(--graphite); margin-bottom:26px;
   }
-  h1 span{color:var(--blue-light)}
+  h1 span{color:var(--blue)}
   .sub{font-weight:300; font-size:clamp(17px,2.2vw,21px); line-height:1.5; color:var(--muted); max-width:560px; margin:0 auto 40px}
   .soon{
     display:inline-block; font-family:'IBM Plex Mono',monospace; font-weight:500; font-size:12px;
-    letter-spacing:.14em; text-transform:uppercase; color:var(--bone);
+    letter-spacing:.14em; text-transform:uppercase; color:var(--muted);
     border:1px solid var(--line); border-radius:4px; padding:10px 16px; margin-bottom:40px;
-    background:var(--graphite);
+    background:#FFFFFF;
   }
   .actions{display:flex; gap:14px; justify-content:center; flex-wrap:wrap}
   .btn{
@@ -57,16 +58,16 @@
     transition:background .2s ease, color .2s ease, border-color .2s ease;
   }
   .btn-primary{background:var(--blue); color:#fff}
-  .btn-primary:hover{background:var(--blue-light)}
+  .btn-primary:hover{background:#1747C7}
   .btn-ghost{border:1px solid var(--line); color:var(--muted)}
-  .btn-ghost:hover{color:var(--bone); border-color:rgba(244,245,246,.28)}
+  .btn-ghost:hover{color:var(--blue); border-color:var(--blue)}
   footer{
     padding:22px 24px 28px; display:flex; justify-content:space-between; align-items:center; gap:16px; flex-wrap:wrap;
     font-family:'IBM Plex Mono',monospace; font-size:11px; letter-spacing:.14em; text-transform:uppercase; color:var(--dim);
     border-top:1px solid var(--line);
   }
   footer a{color:var(--dim); text-decoration:none}
-  footer a:hover{color:var(--bone)}
+  footer a:hover{color:var(--blue)}
   .beta{max-width:560px; margin:0 auto; font-size:12.5px; line-height:1.55; color:var(--dim); margin-top:36px}
   @media (max-width:520px){ .lockup{height:44px} footer{justify-content:center; text-align:center} }
 </style>
@@ -74,10 +75,10 @@
 <body>
 <main>
   <div class="wrap">
-    <img class="lockup" src="images/filament-ats-lockup-reversed.png" alt="Filament ATS">
+    <img class="lockup" src="images/filament-ats-lockup.png" alt="Filament ATS">
     <div class="eyebrow">Applicant Tracking &middot; Now in Beta</div>
     <h1><span>Switch on</span> your hiring.</h1>
-    <p class="sub">Filament ATS is an applicant tracking system for technical hiring teams in climatech, advanced materials, and Industry 4.0. Your team runs it. Your data stays yours.</p>
+    <p class="sub">Filament ATS is an applicant tracking system for technical hiring teams in climatech, advanced materials, and Industry 4.0, with an AI fit score on every new candidate. Your team runs it. Your data stays yours.</p>
     <div class="soon">This site is coming soon</div>
     <div class="actions">
       <a class="btn btn-primary" href="https://volt-force.com/filament">Explore Filament ATS at VoltForce</a>
